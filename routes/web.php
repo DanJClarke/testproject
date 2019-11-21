@@ -31,6 +31,7 @@ Route::get('/', function () {
     DELETE /projects/1 (destory)
 */
 
+/*
 Route::get('/projects', 'ProjectsController@index');
 
 Route::get('/projects/create', 'ProjectsController@create');
@@ -44,3 +45,6 @@ Route::get('/projects/{project}/edit', 'ProjectsController@edit');
 Route::patch('/projects/{project}', 'ProjectsController@update');
 
 Route::delete('/projects/{project}', 'ProjectsController@destory');
+*/
+
+Route::resource('projects', 'ProjectsController');
