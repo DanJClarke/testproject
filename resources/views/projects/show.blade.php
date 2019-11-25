@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title','Project')
+
 @section('content')
 
     <h1 class="title">{{ $project->title }}</h1>
