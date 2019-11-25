@@ -15,6 +15,59 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+/*
+
+Route::get('/', function () {
+
+    $tasks = {
+        'Go to the store',
+        'Go to the market',
+        'Go to work',
+        'Go to the concert'
+    }
+
+    return view('welcome', [
+        'tasks' => $tasks,
+        'foo' => 'bar'
+    ]);
+
+});
+
+
+
+
+ *************  OR  ****************
+
+
+
+Route::get('/', function () {
+
+    $tasks = {
+        'Go to the store',
+        'Go to the market',
+        'Go to work',
+        'Go to the concert'
+    }
+
+    return view('welcome')->with(
+        'foo' => 'bar',
+        'tasks' => {
+            'Go to the store',
+            'Go to the market',
+            'Go to work',
+            'Go to the concert'
+        }
+    );
+
+});
+
+
+
+
+
+
 /*
     GET /projects (index)
 
